@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+
+#jj
+	{
+		position:absolute;
+		top:101px;
+		background:#030;
+		left:1px;
+		text-align:center;
+		color:#F09;
+		font-size:35px;
+		width:1360px;
+		height:46px;
+	}
+#btn
+	{
+		position:absolute;
+		top:1901px;
+		background:#003;
+		left:450px;
+		text-align:center;
+		color:#CCC;
+		font-size:30px;
+		width:250px;
+		height:40px;
+	}
+
+#im3
+	{
+		position:absolute;
+		top:0px;
+		height:45px;
+		left:20px;
+	}
+#t1
+	{
+		position:absolute;
+		top:150px;
+		left:120px;
+		width:1150px;
+		font-size:25px;
+		font-weight:bold;
+	}
+
+#n1
+	{
+		position:absolute;
+		top:0px;
+		background:#6D1635;
+		left:1px;
+		width:1360px;
+		height:100px;
+	}
+#im1
+	{
+		position:absolute;
+		top:-10px;
+		height:120px;
+	}
+#im2
+	{
+		position:absolute;
+		top:-10px;
+		height:110px;
+		left:200px;
+	}
+#in1
+	{
+		position:absolute;
+		left:1030px;
+		top:0px;
+		font-size:25px;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		background:#6D1635;
+		width:250px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+#in2
+	{
+		position:absolute;
+		left:1060px;
+		top:40px;
+		font-size:45px;
+		background:#6D1635;
+		width:250px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+

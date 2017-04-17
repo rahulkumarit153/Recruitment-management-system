@@ -1,0 +1,44 @@
+@charset "utf-8";
+/* CSS Document */
+
+#n1
+	{
+		position:absolute;
+		left:55px;
+		height:60px;
+		top:-15px;
+		color:#1d1d1d;
+		width:1240px;
+	}
+#p1	{
+	position:absolute;
+	left:5px;
+	top:30px;
+}
+#p2	{
+	position:absolute;
+	left:500px;
+	top:34px;
+}
+
+#hh1
+	{
+		left:1100px;
+		position:absolute;
+		top:15px;
+	}
+#n2	{
+	position:absolute;
+	left:50px;
+	background:#1D1D1D;
+	height:2px;
+	top:58px;
+	width:1250px;
+}
+#n3	{
+	position:absolute;
+	left:55px;
+	height:500px;
+	top:62px;
+	width:1240px;
+}

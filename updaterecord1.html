@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Update Records</title>
+<script language="javascript" src="job.js" type="text/javascript"></script>
+<style>
+#n2
+{
+	position:absolute;
+	left:400px;
+	top:200px;
+	width:490px;
+	height:210px;
+	border-width:10px;
+	border-color:#F0F;
+	background:#003;
+	border-style:solid;
+}
+#n3
+{
+	position:absolute;
+	left:0px;
+	top:20px;
+	width:150px;
+	height:150px;
+	}
+#b1
+{
+	position:absolute;
+	left:210px;
+	top:100px;
+	width:198px;
+	height:40px;
+	background:#FC0;
+	font-size:30px;
+	color:#60F
+	}
+#b2
+{
+	position:absolute;
+	left:210px;
+	top:160px;
+	width:198px;
+	height:40px;
+	background:#FC0;
+	font-size:30px;
+	color:#60F
+	}
+a
+	{
+		text-decoration:none;
+		color:#60F;
+	}
+a:hover
+	{
+		text-decoration:underline;
+		color:#030
+	}
+#in3
+{
+	position:absolute;
+	left:170px;
+	top:30px;
+	width:298px;
+	height:30px;
+	font-weight:bold;
+	font-size:20px;
+	}
+#jj
+	{
+		position:absolute;
+		top:101px;
+		background:#030;
+		left:1px;
+		text-align:center;
+		color:#F09;
+		font-size:35px;
+		width:1364px;
+		height:46px;
+	}
+
+#n1
+	{
+		position:absolute;
+		top:0px;
+		background:#6D1635;
+		left:1px;
+		width:1364px;
+		height:100px;
+	}
+#im1
+	{
+		position:absolute;
+		top:-10px;
+		height:120px;
+	}
+#im2
+	{
+		position:absolute;
+		top:-10px;
+		height:110px;
+		left:200px;
+	}
+#in1
+	{
+		position:absolute;
+		left:1030px;
+		top:0px;
+		font-size:25px;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+#in2
+	{
+		position:absolute;
+		left:1060px;
+		top:40px;
+		font-size:45px;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+
+</style>
+</head>
+
+<body onLoad="abc()" bgcolor="#CED5FF">
+<form name="f1">
+<div id="n1">
+<img id="im1" src="l1.gif">
+<img id="im2" src="logo.png">
+<input id="in1" name="dat">
+<input id="in2" name="tm">
+</div>
+<div id="jj">UPDATE OWN DATABASE RECORD</div>
+
+</form>
+<div id="n2">
+<form action="UpdateRecord1.php" method="post" enctype="multipart/form-data">
+<img id="n3" src="s.ico">
+<input type="text" name="uid" id="in3" placeholder="Enter Userid To Update Record">
+<button id="b1">OK</button>
+</form>
+<button  id="b2"><a href="Admin.php">Back</a></button>
+</div>
+</body>
+</html>

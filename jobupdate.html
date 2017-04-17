@@ -1,0 +1,270 @@
+<!doctype html>
+<html>
+<head>
+<script language="javascript" src="job.js" type="text/javascript"></script>
+<style>
+#jj
+	{
+		position:absolute;
+		top:101px;
+		background:#030;
+		left:1px;
+		text-align:center;
+		color:#F09;
+		font-size:35px;
+		width:1364px;
+		height:46px;
+	}
+
+#n1
+	{
+		position:absolute;
+		top:0px;
+		background:#6D1635;
+		left:1px;
+		width:1364px;
+		height:100px;
+	}
+#im1
+	{
+		position:absolute;
+		top:-10px;
+		height:120px;
+	}
+#im2
+	{
+		position:absolute;
+		top:-10px;
+		height:110px;
+		left:200px;
+	}
+#in1
+	{
+		position:absolute;
+		left:1030px;
+		top:0px;
+		font-size:25px;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+#in2
+	{
+		position:absolute;
+		left:1060px;
+		top:40px;
+		font-size:45px;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+#n2
+	{
+		position:absolute;
+		left:300px;
+		top:150px;
+		width:800px;
+		height:480px;
+		background:#124E6D;
+		color:#030;
+	}
+
+#hh1
+	{
+		position:absolute;
+		left:70px;
+		top:-10px;
+		width:200px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in7
+	{
+		position:absolute;
+		left:350px;
+		top:12px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+#hh2
+	{
+		position:absolute;
+		left:70px;
+		top:60px;
+		width:220px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in8
+	{
+		position:absolute;
+		left:350px;
+		top:82px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+		
+#hh3
+	{
+		position:absolute;
+		left:50px;
+		top:130px;
+		width:280px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in3
+	{
+		position:absolute;
+		left:350px;
+		top:152px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+		
+#hh4
+	{
+		position:absolute;
+		left:88px;
+		top:200px;
+		width:280px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in4
+	{
+		position:absolute;
+		left:350px;
+		top:222px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+#hh5
+	{
+		position:absolute;
+		left:88px;
+		top:270px;
+		width:280px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in5
+	{
+		position:absolute;
+		left:350px;
+		top:292px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+#hh6
+	{
+		position:absolute;
+		left:68px;
+		top:340px;
+		width:280px;
+		height:40px;
+		font-size:30px;
+		font-weight:bold;
+		}
+#in6
+	{
+		position:absolute;
+		left:350px;
+		top:362px;
+		width:380px;
+		height:50px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:5px 5px 5px 5px;
+		border-color:#F00;
+		}
+
+#btn
+	{
+		position:absolute;
+		left:250px;
+		top:430px;
+		width:150px;
+		height:40px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:8px 8px 8px 8px;
+		border-color:#030;
+		background:#F60;
+		color:#431B31;
+		}
+
+#btn1
+	{
+		position:absolute;
+		left:410px;
+		top:430px;
+		width:150px;
+		height:40px;
+		font-size:25px;
+		font-weight:bold;
+		border-radius:8px 8px 8px 8px;
+		border-color:#030;
+		background:#F60;
+		color:#431B31;
+		}
+
+	
+</style>
+</head>
+
+<body onLoad="abc()" bgcolor="#CED5FF">
+<form name="f1">
+<div id="n1">
+<img id="im1" src="l1.gif">
+<img id="im2" src="logo.png">
+<input id="in1" name="dat">
+<input id="in2" name="tm">
+</div>
+<div id="jj">JOBS UPDATE</div>
+
+</form>
+<div id="n2">
+<form name="f2" action="jobupdate.php" method="post">
+<h3 id="hh1">Enter Location</h3><input type="text" id="in7" name="loc">
+<h3 id="hh2">Enter Company</h3><input type="text" id="in8" name="comp">
+<h3 id="hh3">Enter Qualification</h3><input type="text" id="in3" name="qualif">
+<h3 id="hh4">Enter Post</h3><input type="text" id="in4"  name="pos">
+<h3 id="hh5">Enter Salary</h3><input type="text" id="in5"  name="salary">
+<h3 id="hh6">Enter Vaccancies</h3><input type="text" id="in6"  name="vacancies">
+<button id="btn">UPDATE</button>
+</form>
+<a href="Admin.php"><button id="btn1">CANCEL</button></a>
+</div>
+</body>
+</html>

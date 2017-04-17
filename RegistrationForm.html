@@ -1,0 +1,409 @@
+<!doctype html>
+<html>
+<head>
+<script type="text/javascript">
+function fun()
+	{
+	document.f1.ad2.value=document.f1.ad1.value;	
+	document.f1.ct.value=document.f1.local.value;	
+	document.f1.pin2.value=document.f1.pin1.value;	
+	document.f1.dist2.value=document.f1.dist1.value;	
+	document.f1.state2.value=document.f1.state1.value;
+	}
+function abc()
+	{
+		window.setTimeout("showTime()",1000);
+	}
+function showTime()
+	{
+		var m,x,y,l,d;
+		d=new Date();
+		l=d.getDay();
+		switch(l)
+			{
+				case 1 : l="Monday";break;
+				case 2 : l="Tuesday";break;
+				case 3 : l="Wednesday";break;
+				case 4 : l="Thursday";break;
+				case 5 : l="Friday";break;
+				case 6 : l="Saturday";break;
+				case 0 : l="Sunday";break;
+				
+			}
+		m=eval(d.getMonth());
+		switch(m)
+			{
+				case 0 : m="January";break;
+				case 1 : m="February";break;
+				case 2 : m="March";break;
+				case 3 : m="April";break;
+				case 4 : m="May";break;
+			 	case 5 : m="June";break;
+				case 6 : m="July";break;
+				case 7 : m="August";break;
+				case 8 : m="September";break;
+				case 9 : m="October";break;
+				case 10 :m="November";break;
+				case 11 :m="December";break;
+				
+			}
+			x=l+", "+d.getDate()+" / "+m+" / "+d.getFullYear();
+			y=d.getHours()+":"+d.getMinutes()+":"+d.getSeconds();
+			document.f1.d1.value=x;
+			document.f1.tm.value=y;
+			myid=window.setTimeout("showTime()",1000);
+	}
+</script>
+<title>Registration Form</title>
+<link rel="stylesheet" type="text/css" href="register.css">
+</head>
+
+<body bgcolor="#D0E1EC" onLoad="abc()">
+<div id="n1">
+<form  name="f1"  action="reg1.php" method="post">
+
+<input id="date" name="d1" style="font-size:large">
+<input id="time" name="tm" style="font-size:x-large">
+<fieldset id="f3">
+<legend align="center">Correspondance Address</legend>
+<p id="pp1">Address </p><input id="in11" name="ad1" size="30">
+<p id="pp2">Locality </p><input id="in12" name="local" size="30">
+<p id="pp3">Pin Code </p><input id="in13" name="pin1" size="15"><p id="pp5"><a href="#">Search PIN</a></p>
+<p id="pp4">E-mail id </p><input id="in14" name="email" size="30">
+<p id="pp6">Dist </p><input id="in15" name="dist1" size="20">
+<p id="pp7">State</p>
+<select name="state1" id="st">
+<option>Bihar</option>
+<option>WEst Bengal</option>
+<option>U.P</option>
+<option>M.P</option>
+<option>A.P</option>
+<option>Delhi</option>
+<option>Goa</option>
+<option>Maharastra</option>
+<option>Punjab</option>
+<option>Haryana</option>
+<option>Telangana</option>
+<option>Gujrat</option>
+<option>Rajasthan</option>
+<option>Jammu & Kasmir</option>
+</select>
+<p id="pp8">Mobile</p><input id="in16" name="mob" size="20">
+<p id="pp9">Tel</p><input id="in17" name="tel" size="20">
+
+</fieldset>
+<fieldset id="f4">
+<legend align="center">Permanent Address</legend>
+<input type="checkbox" id="pp12" name="chk" onClick="fun()">same as correspondence address
+
+<p id="pp2">Address </p> <input id="in12" name="ad2" size="30">
+<p id="pp3">City </p> <input id="in13" name="ct" size="30">
+<p id="pp4"> Pin</p> <input id="in14" name="pin2" size="15">
+
+<p id="pp8">State</p>
+<select name="state2" id="in16" >
+<option>Bihar</option>
+<option>WEst Bengal</option>
+<option>U.P</option>
+<option>M.P</option>
+<option>A.P</option>
+<option>Delhi</option>
+<option>Goa</option>
+<option>Maharastra</option>
+<option>Punjab</option>
+<option>Haryana</option>
+<option>Telangana</option>
+<option>Gujrat</option>
+<option>Rajasthan</option>
+<option>Jammu & Kasmir</option>
+</select>
+<p id="pp7">Dist </p><input id="st" name="dist2" size="20" >
+</fieldset>
+
+<h2 id="hh1">Registration Form</h2>
+</div>
+<hr id="hr1" width="1355">
+<p id="p1">User Type :&nbsp;&nbsp;
+<select name="usertype" id="ut" >
+<option>Candidate</option>
+<option>Admin</option>
+</select>
+<fieldset id="f1">
+<legend align="center">Basic Information</legend>
+<p id="p2">Name </p>
+<input id="in1" name="first" placeholder="&nbsp;&nbsp;First Name" size="25" >
+<input id="in2" name="middle" placeholder="&nbsp;&nbsp;MiddleName" size="25">
+<input id="in3" name="last" placeholder="&nbsp;&nbsp;Last Name" size="25" >
+
+<p id="p3">Father's Name </p>
+<input id="in4" name="ffirst" placeholder="&nbsp;&nbsp;First Name" size="25" >
+<input id="in5" name="fmiddle" placeholder="&nbsp;&nbsp;MiddleName" size="25">
+<input id="in6" name="flast" placeholder="&nbsp;&nbsp;Last Name" size="25" >
+
+<p id="p4">Mother's Name </p>
+<input id="in7" name="mfirst" placeholder="&nbsp;&nbsp;First Name" size="25" >
+<input id="in8" name="mmiddle" placeholder="&nbsp;&nbsp;MiddleName" size="25">
+<input id="in9" name="mlast" placeholder="&nbsp;&nbsp;Last Name" size="25" >
+	
+<p id="p5">Date of Birth</p>
+<select name="mnth" id="s1" >
+<option>&nbsp;Month</option>
+<option>Jan</option>
+<option>Feb</option>
+<option>Mar</option>
+<option>Apr</option>
+<option>May</option>
+<option>Jun</option>
+<option>Jul</option>
+<option>Aug</option>
+<option>Sep</option>
+<option>Oct</option>
+<option>Nov</option>
+<option>Dec</option>
+</select>
+<select name="dy" id="s2">
+<option>&nbsp;Day</option>
+<option>1</option>
+<option>2</option>
+<option>3</option>
+<option>4</option>
+<option>5</option>
+<option>6</option>
+<option>7</option>
+<option>8</option>
+<option>9</option>
+<option>10</option>
+<option>11</option>
+<option>12</option>
+<option>13</option>
+<option>14</option>
+<option>15</option>
+<option>16</option>
+<option>17</option>
+<option>18</option>
+<option>19</option>
+<option>20</option>
+<option>21</option>
+<option>22</option>
+<option>23</option>
+<option>24</option>
+<option>25</option>
+<option>26</option>
+<option>27</option>
+<option>28</option>
+<option>29</option>
+<option>30</option>
+<option>31</option>
+</select>
+<select name="yr" id="s3">
+<option>&nbsp;Year</option>
+<option>2015</option>
+<option>2014</option>
+<option>2013</option>
+<option>2012</option>
+<option>2011</option>
+<option>2010</option>
+<option>2009</option>
+<option>2008</option>
+<option>2007</option>
+<option>2006</option>
+<option>2005</option>
+<option>2004</option>
+<option>2003</option>
+<option>2002</option>
+<option>2001</option>
+<option>2000</option>
+<option>1999</option>
+<option>1998</option>
+<option>1997</option>
+<option>1996</option>
+<option>1995</option>
+<option>1994</option>
+<option>1993</option>
+<option>1992</option>
+<option>1991</option>
+<option>1990</option>
+<option>1989</option>
+<option>1988</option>
+<option>1987</option>
+<option>1986</option>
+<option>1985</option>
+<option>1984</option>
+<option>1983</option>
+<option>1982</option>
+<option>1981</option>
+<option>1980</option>
+<option>1979</option>
+<option>1979</option>
+<option>1978</option>
+<option>1977</option>
+<option>1976</option>
+<option>1975</option>
+<option>1974</option>
+<option>1973</option>
+<option>1972</option>
+<option>1971</option>
+<option>1970</option>
+<option>1969</option>
+<option>1968</option>
+<option>1967</option>
+<option>1966</option>
+<option>1965</option>
+<option>1964</option>
+<option>1963</option>
+<option>1962</option>
+<option>1961</option>
+<option>1960</option>
+<option>1959</option>
+</select>
+
+<p id="p6">Catagory</p>
+<table id="r1" width="600">
+<tr>
+<td width="150"><input  type="radio" name="cat" value="General">General</td>
+<td width="150"><input  type="radio" name="cat" value="Bc-II">Bc-II</td>
+<td width="150"><input  type="radio" name="cat" value="Bc-I">Bc-I</td>
+<td width="150"><input  type="radio" name="cat" value="Sc">Sc</td>
+<td width="150"><input  type="radio" name="cat" value="St">St</td>
+</tr>
+</table>
+<p id="p7">Language Known</p>
+<table id="r2" width="600">
+<tr>
+<td><input type="checkbox" name="lan1" value="English">English</td>
+<td><input type="checkbox" name="lan2" value="Hindi">Hindi</td>
+<td><input type="checkbox" name="lan3" value="Urdu">Urdu</td>
+<td><input type="checkbox" name="lan4" value="Bengali">Bengali</td>
+<td><input type="checkbox" name="lan5" value="Chinese">Chinese</td>
+</tr>
+</table>
+<p id="p8">Urban/Rural</p>
+<select name="ar1" id="ar">
+<option>-Select-</option>
+<option>Rural</option>
+<option >Urban</option>
+<option>Other</option>
+
+</select>
+
+<p id="p9">Marital Status</p>
+<select name="ms" id="ms">
+<option>-Select-</option>
+<option >Married</option>
+<option >Unmarried</option>
+<option>Other</option>
+
+</select>
+
+<p id="p10">Religion</p>
+<select name="rg" id="rg">
+<option>-Select-</option>
+<option>Hindu</option>
+<option>Muslim</option>
+<option>Sikh</option>
+<option>Christian</option>
+<option>Budhism</option>
+<option>Jainism</option>
+<option>Other</option>
+</select>
+<p id="p11">Gender</p>
+<table id="gn" width="600">
+<tr>
+<td width="110"><input  type="radio" name="gen" value="Male">Male</td>
+<td width="120"><input  type="radio" name="gen"  value="Female">Female</td>
+<td width="150"><input  type="radio" name="gen"  value="Transgender">Transgender</td>
+<td width="150"><input  type="radio" name="gen"  value="Other">Other</td>
+</tr>
+</table>
+<p id="p12">Nationality</p>
+<select name="nt" id="nt">
+<option>-Select-</option>
+<option>Indian</option>
+<option>Pakistani</option>
+<option>SriLankan</option>
+<option>Afganistani</option>
+<option>Chinese</option>
+<option>Russian</option>
+<option>Bangladeshi</option>
+<option>American</option>
+<option>British</option>
+<option>Austrailian</option>
+</select>
+
+<p id="p13">Blood Group</p>
+<select name="bg" id="bg">
+<option>-Select-</option>
+<option>o+</option>
+<option>o-</option>
+<option>A+</option>
+<option>A-</option>
+<option>B+</option>
+<option>B-</option>
+<option>AB+</option>
+<option>AB-</option>
+</select>
+
+<p id="p14">Any Disability</p>
+<select name="dab" id="dab">
+<option>Yes</option>
+<option>No</option>
+</select >
+<img id="im1" src="man.png" name="photo" />
+<input id="in10" type="file" name="ph" >
+
+<input id="in20" name="uid" type="text" placeholder="&nbsp;&nbsp;&nbsp;ENTER OWN USER ID"  size="30%">
+<input id="in21" name="pwd" type="password" placeholder="&nbsp;&nbsp;&nbsp;ENTER OWN PASSWORD" size="30%" >
+<input id="in22" name="rpwd" type="password" placeholder="&nbsp;&nbsp;&nbsp;RE-ENTER OWN PASSWORD" size="32%" >
+
+
+
+</fieldset>
+
+<fieldset id="f2">
+<legend align="center">Educational Datails</legend>
+<table id="t1" width="1230">
+<tr>
+<th align="center" width="10%">Degree Name</th>
+<th align="center" width="23%">Passing Institution</th>
+<th align="center" width="23%">Board/University </th>
+<th align="center">Full Marks</th>
+<th align="center">Obtained Marks</th>
+<th align="center">Division/Class</th>
+</tr>
+<tr>
+<td align="center" ><input name="dnm1" size="12" ></td>
+<td align="center"><input name="pi1" size="35"></td>
+<td align="center"><input name="bu1" size="35"></td>
+<td align="center"><input name="fm1"  size="15"></td>
+<td align="center"><input name="om1" size="15"></td>
+<td align="center"><input name="dc1" size="25"></td>
+
+<tr>
+<td align="center" ><input name="dnm2" size="12" ></td>
+<td align="center"><input name="pi2" size="35"></td>
+<td align="center"><input name="bu2" size="35"></td>
+<td align="center"><input name="fm2"  size="15"></td>
+<td align="center"><input name="om2" size="15"></td>
+<td align="center"><input name="dc2" size="25"></td>
+</tr>
+
+<tr>
+<td align="center" ><input name="dnm3" size="12" height="30"></td>
+<td align="center"><input name="pi3" size="35"></td>
+<td align="center"><input name="bu3" size="35"></td>
+<td align="center"><input name="fm3"  size="15"></td>
+<td align="center"><input name="om3" size="15"></td>
+<td align="center"><input name="dc3" size="25"></td>
+</tr>
+</table>
+</fieldset>
+
+<div id="n2">
+<input type="submit" value="Submit" id="in18">
+</form>
+<a href="user.php"><button id="in19">Cancel</button></a>
+</div>
+
+
+</body>
+</html>

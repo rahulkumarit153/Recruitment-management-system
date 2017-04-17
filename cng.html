@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<title>Change Password</title>
+<script src="job.js" language="javascript"></script>
+<style>
+#n1
+	{
+		position:absolute;
+		background:#003;
+		left:300px;
+		top:150px;
+		width:700px;
+		height:400px;
+	}
+#n5
+	{
+		position:fixed;
+		top:0px;
+		background:#6D1635;
+		left:1px;
+		width:1364px;
+		height:100px;
+	}
+#im1
+	{
+		position:absolute;
+		top:-10px;
+		height:120px;
+	}
+#im2
+	{
+		position:absolute;
+		top:-10px;
+		height:110px;
+		left:200px;
+	}
+#im3
+	{
+		position:absolute;
+		top:0px;
+		height:45px;
+		left:20px;
+	}
+#in1
+	{
+		position:absolute;
+		left:1030px;
+		top:0px;
+		font-size:25px;
+		font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+#in2
+	{
+		position:absolute;
+		left:1060px;
+		top:40px;
+		font-size:45px;
+		background:#6D1635;
+		width:300px;
+		border:none;
+		color:#F4A908;
+		font-weight:bold;
+	}
+	
+#uid1
+	{
+		position:absolute;
+		left:100px;
+		top:50px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:20px;
+		color:#F0F;
+		font-weight:bold;
+	}
+#uid2
+	{
+		position:absolute;
+		left:290px;
+		top:68px;
+		height:25px;
+		width:300px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:18px;
+		color:#330;
+		font-weight:bold;
+	}
+#pwd1
+	{
+		position:absolute;
+		left:60px;
+		top:115px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:20px;
+		color:#F0F;
+		font-weight:bold;
+	}
+#pwd2
+	{
+		position:absolute;
+		left:290px;
+		top:130px;
+		height:25px;
+		width:300px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:25px;
+		color:#330;
+		font-weight:bold;
+	}
+#npwd1
+	{
+		position:absolute;
+		left:55px;
+		top:185px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:20px;
+		color:#F0F;
+		font-weight:bold;
+	}
+#npwd2
+	{
+		position:absolute;
+		left:290px;
+		top:200px;
+		height:25px;
+		width:300px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:25px;
+		color:#330;
+		font-weight:bold;
+	}
+#rnpwd1
+	{
+		position:absolute;
+		left:15px;
+		top:250px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:20px;
+		color:#F0F;
+		font-weight:bold;
+	}
+#rnpwd2
+	{
+		position:absolute;
+		left:290px;
+		top:265px;
+		height:25px;
+		width:300px;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:25px;
+		color:#330;
+		font-weight:bold;
+	}
+
+#n2
+	{
+		position:absolute;
+		left:150px;
+		top:320px;
+		height:45px;
+		width:150px;
+		border-radius:5px 5px spx spx;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:25px;
+		color:#90c;
+		background:#900;
+		font-weight:bold;
+	}
+#n3
+	{
+		position:absolute;
+		left:350px;
+		top:320px;
+		height:45px;
+		width:150px;
+		border-radius:5px 5px spx spx;
+		font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+		font-size:25px;
+		color:#90C;
+		background:#900;
+		font-weight:bold;
+	}
+
+#jj
+	{
+		position:absolute;
+		top:101px;
+		background:#030;
+		left:1px;
+		text-align:center;
+		color:#F09;
+		font-size:35px;
+		width:1364px;
+		height:46px;
+	}
+
+</style>
+</head>
+
+<body onLoad="abc()" bgcolor="#CAF4F9">
+<form name="f1">
+<div id="n5">
+<img id="im1" src="l1.gif">
+<img id="im2" src="logo.png">
+<input id="in1" name="dat">
+<input id="in2" name="tm">
+</div>
+<div id="jj">CHANGE OWN PASSWORD
+</div>
+</form>
+<div id="n1">
+<form method="post" action="change.php">
+<p id="uid1">Enter User Id</p>
+<p id="pwd1">Enter old Password</p>
+<p id="npwd1">Enter New Password</p>
+<p id="rnpwd1">Re-Enter New Password</p>
+<input type="text"  name="uid" id="uid2"><br>
+<input type="password"  name="pwd" id="pwd2"><br>
+<input type="password"  name="npwd" id="npwd2"><br>
+<input type="password"  name="rnpwd"  id="rnpwd2"><br>
+<input type="submit" value="Ok" id="n2">
+</form>
+<form method="post" action="login.html">
+<input type="submit" value="Cancel" id="n3">
+</form>
+</div>
+</body>
+</html>
